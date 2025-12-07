@@ -532,79 +532,9 @@ tbody tr:last-child td {
   color: var(--muted);
 }
 
-/* ============================
-   TABLE → CARD STACK (Mobile)
-===============================*/
 @media (max-width: 600px) {
-  #matkul table,
-  #matkul thead,
-  #matkul tbody,
-  #matkul th,
-  #matkul td,
-  #matkul tr {
-    display: block;
-    width: 100%;
-  }
-
-  #matkul thead {
+  #matkul {
     display: none;
-  }
-
-  #matkul tr {
-    margin-bottom: 15px;
-    background: white;
-    border-radius: 14px;
-    padding: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-
-  #matkul td {
-    text-align: right;
-    padding: 10px 14px 10px 50%;
-    position: relative;
-    border-bottom: 1px solid #eee;
-  }
-
-  #matkul td:last-child {
-    border-bottom: none;
-  }
-
-  #matkul td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 14px;
-    color: #014b5f;
-    font-weight: 600;
-    font-size: 13px;
-    text-align: left;
-  }
-
-  #matkul td.time {
-    font-weight: 700;
-    font-size: 15px;
-    color: var(--purple-1);
-    background: rgba(107, 61, 242, 0.07);
-    border-radius: 10px;
-    margin-bottom: 10px;
-    padding-left: 14px !important;
-  }
-
-  #matkul td.time::before {
-    content: "Jam";
-    font-size: 12px;
-    font-weight: 700;
-    color: #555;
-  }
-
-  #matkul td.center {
-    text-align: center !important;
-    padding: 15px;
-    border: none;
-    display: block;
-    background: #f4f4f4;
-    font-size: 15px;
-    font-weight: 700;
-    border-radius: 10px;
   }
 }
 
